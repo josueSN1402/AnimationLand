@@ -1,3 +1,10 @@
+:root {
+	--dark-brown: #a54a38;
+	--light-brown: #bf624c;
+	--green: #51af5e;
+    --shadow: 0 19px 38px rgba(0,0,0,0.30),
+              0 15px 12px rgba(0,0,0,0.22);
+}
 body {
   width: 100%;
   min-height: 100vh;
@@ -12,8 +19,7 @@ body {
   overflow: hidden;
   background-color: #CCEFFF;
   border: 1vmin solid black;
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30),
-              0 15px 12px rgba(0,0,0,0.22);
+  box-shadow: var(--shadow);
 }
 .layer {
   position: absolute;
@@ -143,22 +149,45 @@ body {
   right: 32%;
 }
 .layer-4 .ear--outer {
-  height: 45px;
+  height: 50px;
 }
 .layer-4 .ear--inner {
   top: 15px;
-  height: 30px;
+  height: 35px;
 }
 .layer-4 .head {
-  top: 35px;
+  top: 40px;
 }
 .layer-6 .ear--outer {
-  height: 40px;
+  height: 45px;
 }
 .layer-6 .ear--inner {
-  top: 14px;
-  height: 25px;
+  top: 15px;
+  height: 30px;
 }
 .layer-6 .head {
-  top: 30px;
+  top: 35px;
+}
+.mound {
+	border-radius: 3vmin;
+	margin: auto;
+	overflow: hidden;
+	background-color: var(--light-brown);
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px 0px,
+		rgba(0, 0, 0, 0.22) 0px 15px 12px 0px;
+}
+.lawn {
+	height: 20px;
+	background-color: var(--green);
+}
+.land {
+	height: 30px;
+	background-color: var(--dark-brown);
+	background-image: linear-gradient(135deg, var(--green) 25%, transparent 25%),
+		linear-gradient(225deg, var(--green) 25%, transparent 25%),
+		linear-gradient(45deg, var(--light-brown) 25%, transparent 25%),
+		linear-gradient(315deg, var(--light-brown) 25%, var(--dark-brown) 25%);
+	background-position: 15px 0, 15px 0, 0 0, 0 0;
+	background-size: 30px 30px;
+	background-repeat: repeat;
 }
