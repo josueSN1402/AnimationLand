@@ -20,7 +20,7 @@ body {
   bottom: 0;
 }
 .layer-1 {
-  background-color: white;
+  background-color: rgba(255, 255, 255, .5);
   height: 80%;
   position: absolute;
   right: 18%;
@@ -92,4 +92,54 @@ body {
   height: 17%;
   width: 41%;
   z-index: 10;
+}
+.ear--outer,
+.ear--inner {
+  border-radius: 90%;
+  position: absolute;
+}
+.ear--outer {
+  background-color: white;
+  width: 20px;
+  height: 50px;
+}
+.ear--inner {
+  background-color: pink;
+  width: 10px;
+  height: 35px;
+  top: 15px;
+}
+.left-ear--outer {
+  left: 10px;
+}
+.left-ear--inner {
+  left: 15px;
+}
+.right-ear--outer {
+  right: 10px;  
+}
+.right-ear--inner {
+  right: 15px;  
+}
+.head {
+  background-color: white;
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  height: 58px;
+  border-radius: 50%;
+}
+.head__eye {
+  background-color: gray;
+  position: absolute;
+  top: 14px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+.head__eye--left {
+  left: 20px;
+}
+.head__eye--right {
+  right: 20px;  
 }
