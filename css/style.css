@@ -20,7 +20,6 @@ body {
   bottom: 0;
 }
 .layer-1 {
-  background-color: rgba(255, 255, 255, .5);
   height: 80%;
   position: absolute;
   right: 18%;
@@ -28,7 +27,6 @@ body {
   z-index: 1;
 }
 .layer-2 {
-  background-color: white;
   height: 80%;
   position: absolute;
   left: 18%;
@@ -36,8 +34,8 @@ body {
   z-index: 2;
 }
 .layer-3 {
-  /*background-color: pink;*/
-  height: 68%;
+  background-color: pink;
+  height: 70%;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -45,7 +43,6 @@ body {
   z-index: 3;
 }
 .layer-4 {
-  background-color: white;
   height: 60%;
   left: 5%;
   width: 25%;
@@ -58,7 +55,6 @@ body {
   z-index: 5;
 }
 .layer-6 {
-  background-color: white;
   height: 42%;
   right: 8%;
   width: 25%;
@@ -102,11 +98,13 @@ body {
   background-color: white;
   width: 32%;
   height: 12%;
+  min-height: 35px;
 }
 .ear--inner {
   background-color: pink;
   width: 15%;
   height: 8%;
+  min-height: 20px;
   top: 4%;
 }
 .left-ear--outer {
@@ -127,6 +125,7 @@ body {
   top: 10%;
   width: 100%;
   height: 15%;
+  min-height: 50px;
   border-radius: 50%;
 }
 .head__eye {
@@ -142,4 +141,24 @@ body {
 }
 .head__eye--right {
   right: 32%;
+}
+.layer-4 .ear--outer {
+  height: 45px;
+}
+.layer-4 .ear--inner {
+  top: 15px;
+  height: 30px;
+}
+.layer-4 .head {
+  top: 35px;
+}
+.layer-6 .ear--outer {
+  height: 40px;
+}
+.layer-6 .ear--inner {
+  top: 14px;
+  height: 25px;
+}
+.layer-6 .head {
+  top: 30px;
 }
