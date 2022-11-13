@@ -25,17 +25,18 @@ body {
   position: absolute;
   bottom: 0;
 }
+.bonny{
+  animation-name: layer;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
 .layer-1 {
   height: 80%;
   position: absolute;
   right: 18%;
   width: 25%;
   z-index: 1;
-
-  animation-name: layer;
   animation-duration: .8s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
 }
 .layer-2 {
   height: 80%;
@@ -43,6 +44,7 @@ body {
   left: 18%;
   width: 25%;
   z-index: 2;
+  animation-duration: 1s;
 }
 .layer-3 {
   height: 68%;
@@ -57,10 +59,12 @@ body {
   left: 5%;
   width: 25%;
   z-index: 4;
+  animation-duration: .6s;
+  animation-timing-function: ease-in;
 }
 .layer-5 {
-  height: 51%;
-  width: 68%;
+  height: 48%;
+  width: 70%;
   z-index: 5;
 }
 .layer-6 {
@@ -68,10 +72,12 @@ body {
   right: 8%;
   width: 25%;
   z-index: 6;
+  animation-duration: .5s;
+  animation-timing-function: ease;
 }
 .layer-7 {
   right: 0;
-  height: 34%;
+  height: 32%;
   width: 52%;
   z-index: 7;
 }
