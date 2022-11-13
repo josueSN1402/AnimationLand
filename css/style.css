@@ -40,7 +40,6 @@ body {
   z-index: 2;
 }
 .layer-3 {
-  background-color: pink;
   height: 70%;
   left: 0;
   right: 0;
@@ -55,7 +54,6 @@ body {
   z-index: 4;
 }
 .layer-5 {
-  background-color: papayawhip;
   height: 51%;
   width: 68%;
   z-index: 5;
@@ -67,14 +65,13 @@ body {
   z-index: 6;
 }
 .layer-7 {
-  background-color: pink;
   right: 0;
   height: 34%;
   width: 52%;
   z-index: 7;
 }
 .layer-8 {
-  background-color: papayawhip;
+  bottom: 0;
   left: 0;
   right: 0;
   height: 20%;
@@ -82,18 +79,72 @@ body {
   margin: 0 auto;
   z-index: 8;
 }
+.layer-8__center-lawn,
+.layer-8__left-lawn,
+.layer-8__right-lawn {
+  position: absolute;
+  bottom: 0;
+  background-color: var(--green);
+  width: 40%;
+  border-radius: 40px 40px 0 0;
+}
+.layer-8__center-lawn {
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  height: 100%;
+}
+.layer-8__left-lawn {
+  height: 70%;
+}
+
+.layer-8__right-lawn {
+  right: 0;
+  height: 80%;
+}
 .layer-9 {
-  background-color: white;
+  bottom: 0;
   height: 17%;
   width: 41%;
   z-index: 9;
 }
 .layer-10 {
-  background-color: pink;
   right: 0;
   height: 17%;
   width: 41%;
   z-index: 10;
+}
+.layer-9__left-cloud,
+.layer-9__right-cloud,
+.layer-10__left-cloud,
+.layer-10__right-cloud {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+}
+.layer-9__left-cloud,
+.layer-10__right-cloud {
+  height: 100%;
+  width: 65%;
+}
+.layer-9__right-cloud,
+.layer-10__left-cloud {
+  height: 60%;
+  width: 50%;
+}
+.layer-9__left-cloud {
+  border-radius: 40px 40px 0 0;
+}
+.layer-9__right-cloud {
+  right: 0;
+  border-radius: 0 40px 30px 0;
+}
+.layer-10__left-cloud {
+  border-radius: 40px 0 0 30px;
+}
+.layer-10__right-cloud {
+  right: 0;
+  border-radius: 40px 40px 0 0;
 }
 .ear--outer,
 .ear--inner {
@@ -169,25 +220,25 @@ body {
   top: 35px;
 }
 .mound {
-	border-radius: 3vmin;
-	margin: auto;
-	overflow: hidden;
-	background-color: var(--light-brown);
-	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px 0px,
+  border-radius: 3vmin;
+  margin: auto;
+  overflow: hidden;
+  background-color: var(--light-brown);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px 0px,
 		rgba(0, 0, 0, 0.22) 0px 15px 12px 0px;
 }
 .lawn {
-	height: 20px;
-	background-color: var(--green);
+  height: 20px;
+  background-color: var(--green);
 }
 .land {
-	height: 30px;
-	background-color: var(--dark-brown);
-	background-image: linear-gradient(135deg, var(--green) 25%, transparent 25%),
-		linear-gradient(225deg, var(--green) 25%, transparent 25%),
-		linear-gradient(45deg, var(--light-brown) 25%, transparent 25%),
-		linear-gradient(315deg, var(--light-brown) 25%, var(--dark-brown) 25%);
-	background-position: 15px 0, 15px 0, 0 0, 0 0;
-	background-size: 30px 30px;
-	background-repeat: repeat;
+  height: 30px;
+  background-color: var(--dark-brown);
+  background-image: linear-gradient(135deg, var(--green) 25%, transparent 25%),
+  	linear-gradient(225deg, var(--green) 25%, transparent 25%),
+  	linear-gradient(45deg, var(--light-brown) 25%, transparent 25%),
+  	linear-gradient(315deg, var(--light-brown) 25%, var(--dark-brown) 25%);
+  background-position: 15px 0, 15px 0, 0 0, 0 0;
+  background-size: 30px 30px;
+  background-repeat: repeat;
 }
