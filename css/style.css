@@ -10,6 +10,8 @@ body {
   min-height: 100vh;
   display: grid;
   place-items: center;
+
+  counter-reset: score;
 }
 .phone {
   position: relative;
@@ -36,7 +38,7 @@ body {
   right: 18%;
   width: 25%;
   z-index: 1;
-  animation-duration: .8s;
+  animation-duration: 1s;
 }
 .layer-2 {
   height: 80%;
@@ -44,7 +46,7 @@ body {
   left: 18%;
   width: 25%;
   z-index: 2;
-  animation-duration: 1s;
+  animation-duration: 1.2s;
 }
 .layer-3 {
   height: 68%;
@@ -59,7 +61,7 @@ body {
   left: 5%;
   width: 25%;
   z-index: 4;
-  animation-duration: .6s;
+  animation-duration: .8s;
   animation-timing-function: ease-in;
 }
 .layer-5 {
@@ -72,7 +74,7 @@ body {
   right: 8%;
   width: 25%;
   z-index: 6;
-  animation-duration: .5s;
+  animation-duration: .7s;
   animation-timing-function: ease;
 }
 .layer-7 {
@@ -169,7 +171,7 @@ body {
   min-height: 35px;
 }
 .ear--inner {
-  background-color: pink;
+   background-color: pink; 
   width: 15%;
   height: 8%;
   min-height: 20px;
@@ -254,16 +256,41 @@ body {
   	linear-gradient(45deg, var(--light-brown) 25%, transparent 25%),
   	linear-gradient(315deg, var(--light-brown) 25%, var(--dark-brown) 25%);
   background-position: 15px 0, 15px 0, 0 0, 0 0;
-  background-size: 30px 30px;
+  background-size: 33px 30px;
   background-repeat: repeat;
 }
 input[type=checkbox] {
-  position: absolute;
   appearance: none;
   cursor: pointer;
-  z-index: 1;
-  width: 100%;
   height: 80px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+input[type=checkbox]:focus {
+  appearance: none;
+  outline: none;
+}
+input:checked {
+  counter-increment: score;
+}
+.score::after {
+  content: counter(score);
+}
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 28px 0 10px;
+}
+.title img {
+  width: 70%;
+}
+.score {
+  color: var(--light-brown);
+  font-size: 1rem;
+  text-align: center;
 }
 
 @keyframes blink {
